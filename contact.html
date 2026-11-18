@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Contact - Babel Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>BABEL</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div style="padding: 25px;">
+        <h1>Contact Us</h1>
+        <p>Phone: +961 4 543 888</p>
+        <p>Address: Dbayeh Highway, Lebanon</p>
+
+        <br>
+        <h3>Table Reservation Form</h3>
+        <br>
+
+        <form id="reservationForm">
+            <label>Your Name:</label><br>
+            <input type="text" id="name" style="padding: 5px; width: 200px;"><br><br>
+
+            <label>Branch:</label><br>
+            <select id="branch" style="padding: 5px; width: 200px;">
+                <option value="Dbayeh">Babel Dbayeh</option>
+                <option value="Bay">Babel Bay</option>
+            </select><br><br>
+
+            <label>Date & Time:</label><br>
+            <input type="text" id="date" style="padding: 5px; width: 200px;"><br><br>
+
+            <button type="submit" style="padding: 5px 15px;">Submit Request</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Copyright <span id="year"></span> Babel Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

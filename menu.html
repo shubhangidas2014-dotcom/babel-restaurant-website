@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Menu - Babel Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>BABEL</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div style="padding: 25px;">
+        <h1>Our Menu</h1>
+        <p>Explore our mezze, grills, and special dishes.</p>
+        
+        <br>
+        <!-- category filter buttons -->
+        <button onclick="filterMenu('all', this)">All</button>
+        <button onclick="filterMenu('mezze', this)">Mezze</button>
+        <button onclick="filterMenu('mains', this)">Mains</button>
+
+        <br><br>
+
+        <div class="flex-container">
+            <div class="card menu-item" data-category="mezze">
+                <img src="https://images.unsplash.com/photo-1577906096429-f73c2c312435?w=300" alt="Hummus">
+                <h3>Hummus Babel</h3>
+                <p>$14.00</p>
+            </div>
+
+            <div class="card menu-item" data-category="mezze">
+                <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=300" alt="Aubergine">
+                <h3>Smoked Aubergine</h3>
+                <p>$16.00</p>
+            </div>
+
+            <div class="card menu-item" data-category="mains">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300" alt="Grill">
+                <h3>Mixed Grill</h3>
+                <p>$36.00</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright <span id="year"></span> Babel Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
